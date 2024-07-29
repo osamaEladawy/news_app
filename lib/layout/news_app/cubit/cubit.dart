@@ -17,24 +17,10 @@ class NewsCubit extends Cubit<NewsStates> {
   int currentindex = 0;
 
   List<BottomNavigationBarItem> bottomItems = [
+    const BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+    const BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
     const BottomNavigationBarItem(
-      icon: Icon(
-        Icons.home,
-      ),
-      label: 'Home',
-    ),
-    const BottomNavigationBarItem(
-      icon: Icon(
-        Icons.search,
-      ),
-      label: 'Search',
-    ),
-    const BottomNavigationBarItem(
-      icon: Icon(
-        Icons.settings,
-      ),
-      label: 'Settings',
-    ),
+        icon: Icon(Icons.settings), label: 'Settings'),
   ];
 
   List<Widget> screens = [
